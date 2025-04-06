@@ -1,0 +1,73 @@
+//- <!DOCTYPE html>
+//- <html lang="en">
+
+//- <head>
+//-     <meta charset="UTF-8">
+//-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//-     <title>SignUP</title>
+//-     link(rel="stylesheet", href="../static/style.css")
+//- </head>
+
+//- <body>
+//-     <div class="registationform ">
+//-         <form action="/" method="post" >
+//-             <h2>Sign Up</h2>
+
+//-             <div class="username">
+//-                 <input type="text" placeholder=" Enter Your First Name" name ="firstname" class="name" required>
+//-                 <input type="text" placeholder=" Enter Your Last Name" name ="lastname" class="name">
+//-             </div>
+
+//-             <div class="contact">
+//-                 <input type="email" placeholder=" Enter Your Email" name ="email" class="email" required>
+//-                 <input type="tel" placeholder=" Enter Your Mobile No" name ="mobno" class="mobno" required>
+//-             </div>
+
+//-             <div class="passward">
+//-                 <input type="password" placeholder=" Enter Passward" name ="passward" class="name" required>
+//-                 <input type="password" placeholder=" Enter Confirm Passward" name ="confpassward" class="name" required>
+//-             </div>
+            
+                
+                
+            
+//-             <button type="submit">Register</button>
+//-             <div class="Login">
+//-                 <p>Have an account? <a href="/login">Log In</a></p>
+//-             </div>
+//-         </form>
+//-     </div>
+//- </body>
+
+//- </html>
+
+
+
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title SignUP
+    link(rel="stylesheet", href="../static/style.css")
+  body
+    .registationform
+      .logo
+        img(src="../static/img/logo2.png", alt="Music App Logo")
+        h2 Join the beat – Sign up now and let the music play!
+      form(action="/", method="post")
+        .username
+          input(type="text", placeholder="Enter Your First Name", name="firstname", class="name", required)
+          input(type="text", placeholder="Enter Your Last Name", name="lastname", class="name")
+        .contact
+          input(type="email", placeholder="Enter Your Email", name="email", class="email", required)
+          input(type="tel", placeholder="Enter Your Mobile No", name="mobno", class="mobno", required)
+        .passward
+          input(type="password", placeholder="Enter Password", name="passward", class="name", required)
+          input(type="password", placeholder="Enter Confirm Password", name="confpassward", class="name", required)
+        button(type="submit") Register
+        .Login
+          p 
+            | Have an account? 
+            a(href="/login") Log In

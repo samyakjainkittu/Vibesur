@@ -1,0 +1,19 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "Login and register",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samyak Jain",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "login": "file:",
+    "mongoose": "^8.8.4",
+    "nodemon": "^3.1.4",
+    "pug": "^3.0.3"
+  }
+}
